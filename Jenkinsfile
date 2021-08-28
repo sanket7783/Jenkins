@@ -1,4 +1,6 @@
 pipeline {
+    agent any
+    stages {
     stage('Build') {
         println "Building...!!!"
     }
@@ -7,5 +9,6 @@ pipeline {
     }
     stage('Deploy') {
         println "Deploying...!!!"
+    }
     }
          }
