@@ -1,8 +1,11 @@
-stage('stage1') {
-    // some block
-    println "Hello World...!!!"
-}
-stage('stage2') {
-    // some block
-    println "Hello Universe...!!!"
-}
+pipeline {
+    stage('Build') {
+        println "Building...!!!"
+    }
+    stage('Test') {
+        println "Testing...!!!"
+    }
+    stage('Deploy') {
+        println "Deploying...!!!"
+    }
+         }
